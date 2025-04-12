@@ -10,23 +10,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'echo "Build successful!"'
+                bat 'echo Building the project...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'echo "All tests passed!"'
+                bat 'echo Running tests...'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
-                sh 'echo "Deployment done!"'
+                bat 'echo Deploying application...'
             }
         }
     }
 }
+
